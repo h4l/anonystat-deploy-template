@@ -1,0 +1,4 @@
+[submodule "anonystat"]
+	path = anonystat
+	url = https://github.com/h4l/anonystat.git
+	branch = main

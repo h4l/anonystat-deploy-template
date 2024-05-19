@@ -1,0 +1,6 @@
+{
+  "tasks": {
+    "build": "cd anonystat && deno task build",
+    "config": "deno run --lock anonystat/deno.lock --allow-read=. --allow-env anonystat/scripts/config.ts anonystat-config.jsonc --override '*'"
+  }
+}

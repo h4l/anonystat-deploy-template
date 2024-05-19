@@ -1,0 +1,25 @@
+{
+  // See https://github.com/h4l/anonystat/?tab=readme-ov-file#configuration
+  // for all available options.
+  //
+  // To avoid committing secrets to the repo, leave dummy values here and
+  // set the following environment variables:
+  //    ANONYSTAT_DATA_STREAM_OUT_MEASUREMENT_ID=example-id
+  //    ANONYSTAT_DATA_STREAM_OUT_API_SECRET=example-secret
+  //    ANONYSTAT_USER_ID_SCRAMBLING_SECRET=00000000-0000-0000-0000-000000000000
+  //
+  // These could be set via direnv's .envrc, which sources .env (which is
+  // gitignored).
+  "forward": {
+    "data_stream": {
+      "in": {
+        "measurement_id": "foo",
+        "api_secret": "secret123"
+      },
+      "out": {
+        "measurement_id": "G-00000000",
+        "api_secret": "00000000"
+      }
+    }
+  }
+}
